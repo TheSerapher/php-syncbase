@@ -1,0 +1,10 @@
+RedirectMatch 404 /templates(/|$)
+RedirectMatch 404 /.svn(/|$)
+RedirectMatch 404 /include(/|$)
+RedirectMatch 404 /nbproject(/|$)
+
+# Uncomment this to setup basic authentication to use it for SVN authentication in the global config
+# AuthType Basic
+# AuthName "Sync.Base Authentication"
+# AuthUserFile /<path>/<to>/<htpasswd>
+# Require valid-user

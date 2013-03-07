@@ -1,0 +1,405 @@
+* {
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida", Arial, Verdana, Helvetica, sans-serif;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clear { 
+    display: inline-table;
+}
+
+/* Hides from IE-mac \*/
+* html .clear {
+    height: 1%;
+}
+
+.clear {
+    display: block;
+}
+/* End hide from IE-mac */
+
+html, body {
+    background: #111 url('../images/bg.gif') left top repeat-x;
+    color: #666;
+}
+
+body {
+    font-size: 75%;
+    text-align: center;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a, :focus {
+    outline: 0;
+}
+
+a {
+    color: #ffa200;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 200%;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+form p {
+    padding: .4em 0 !important;
+}
+
+a, a *, button, button * {
+    cursor: pointer;
+}
+
+textarea {
+    overflow: auto;
+}
+
+button {
+    background: #ffa200 url('../images/th_bg.gif') left top repeat-x;
+    border: 0;
+    color: #fff;
+    font-family: "Georgia", "Times New Roman", "Times", serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: .4em 2em .5em;
+    text-align: center;
+}
+
+code, pre {
+    background: #262626;
+    border-left: 5px solid #363636;
+    color: #fff;
+    display: block;
+    font-family: monospace;
+    font-size: 120%;
+    line-height: 180%;
+    padding: 15px 15px 0 15px;
+    width: 680px;
+    zoom: 1;
+    height: 1%;
+    white-space: pre-wrap;       /* css-3 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+blockquote {	
+    background: transparent url('../images/quote_bg.gif') left top no-repeat;
+    color: #555;
+    display: block;
+    font-style: italic;
+    line-height: 180%;	
+    padding: 10px 40px 20px;
+    text-indent: 3em;
+}
+
+.ri {
+    text-align: right;
+}
+
+#siteholder .cwrap {
+    margin: 0 auto;
+    text-align: left;
+    width: 800px;
+}
+
+#header {
+    border-bottom: 5px solid #333;
+    padding: 20px 0 10px;
+}
+
+#logo {
+    display: block;
+    float: left;
+    width: 300px;
+}
+
+#logo h1, #logo h1 * {
+    color: #fff;
+    font-family: "Georgia", "Times New Roman", "Times", serif;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#logo h1 a span {
+    color: #ffa200;
+}
+
+#logo h1 {
+    font-size: 4em;
+}
+
+#logo h2 {
+    color: #555;
+    font-size: 1.1em;
+    font-weight: normal;
+    padding: 5px 0 10px;
+}
+
+#logo:hover h2 {
+    color: #999;
+}
+
+#nav {
+    float: right;
+    font-size: 1.2em;
+    padding-top: 1.4em;
+    width: 500px;
+}
+
+#nav ul {
+    float: right;
+}
+
+#nav li, #nav li a, #nav li span {
+    display: block;
+    float: left;
+    text-align: center;
+    text-decoration: none;
+}
+
+#nav li {
+    padding: 0 0 0 10px;
+}
+
+#nav, #nav * {
+    color: #777;
+    text-transform: uppercase;
+}
+
+#nav a, #nav span {
+    padding: 3px 3px 5px 3px;
+    border-bottom: 1px solid #333;
+}
+
+#nav a:hover, #nav a:focus,
+#nav .act a, #nav .act span {
+    color: #ccc;
+    border-color: #666;
+}
+
+#nav .act a, #nav .act span {
+    border-color: #ffa200;
+    border-width: 2px;
+    color: #fff;
+}
+
+#content {
+    padding: 20px 0 40px;
+    min-height: 625px;
+}
+
+#content h2, #content h3,
+#content h4, #content h5 {
+    color: #ccc;
+}
+
+#content h2, #content h3, #content h4 {
+    font-family: "Georgia", "Times New Roman", "Times", serif;
+    font-weight: normal;
+}
+
+#content h2 {
+    font-size: 300%;
+    padding: 1em 0;
+}
+
+#content h3, #content h4 {
+    font-size: 160%;
+    padding: 1em 0 .5em;
+}
+
+#content h3 {
+    padding-top: 2em;
+}
+
+#content p {
+    font-size: 100%;
+    line-height: 200%;
+    padding-bottom: 2em;
+}
+
+#content .teaser {
+    border-bottom: 1px solid #333;
+    color: #888;
+    font-size: 130%;
+    line-height: 170%;
+    padding-bottom: 2em;
+}
+
+#content ul li {
+    background: transparent url('../images/li_bullet1.gif') left .8em no-repeat;
+    display: block;
+    padding: .4em 0 .4em 12px;
+}
+
+#content ul li ul {
+    margin: .5em 0 0;
+}
+
+#content ul li li {
+    background: transparent url('../images/li_bullet2.gif') left .9em no-repeat;
+    font-size: 95%;
+    padding: .4em 0 .4em 12px;
+}
+
+#content table {
+    border: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#content table th {
+    background: #ffa200 url('../images/th_bg.gif') left top repeat-x;
+    padding: .7em .5em;
+    color: #fff;
+}
+
+#content table td {
+    padding: .7em .5em;
+}
+
+#content table thead th {
+    background: #ffa200 url('../images/th_bg.gif') left top repeat-x;
+    color: #fff;
+}
+
+#content table tbody td {
+    border-top: 1px solid #242424;
+}
+
+#content table tbody .odd td {
+    background: #1a1a1a;
+}
+
+#content table tbody tr:hover td {
+    color: #aaa;
+}
+
+#content .in {
+    background: #333;
+    color: #ccc;
+    border: 0 none;
+    width: 150px;
+}
+
+select.sel {
+    background: #333;
+    color: #ccc;
+    border:1px solid #A5A5A5;
+    width: 150px;
+}
+
+select.sel option {
+    background: #333;
+    color: #ccc;
+    border:1px solid #A5A5A5;
+}
+
+#content label {
+    font-size: 90%;
+    font-weight: bold;
+}
+
+#status p.error {
+    color: #FF3322;
+    font-size: 20px;
+    padding: 25px;
+}
+
+#status p.ok {
+    color: #22FF33;
+    font-size: 20px;
+    padding: 25px;
+}
+
+#content input,
+#content textarea {	
+    padding: 5px;
+    width: 100px;
+}
+
+#content img {
+    background: #000;
+    border: 2px solid #333;
+    display: block;
+    padding: 1px;
+}
+
+.img-left {
+    float: left;
+    margin: .3em 20px 10px 0;
+}
+
+.img-right {
+    float: right;
+    margin: .3em 0 10px 20px;
+}
+
+#footer {
+    background: #000 url('../images/footer_bg.gif') left top repeat;
+    border-top: 1px solid #1a1a1a;
+    display: block;
+    padding: 30px 0 40px;
+    text-align: center;
+}
+
+#footer p {
+    padding: 0 0 8px 0;
+}
+
+#footer, #footer * {
+    color: #555;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #999;
+}
+
+#footer .sp {
+    font-size: 95%;
+}
+
+#footer .sp, #footer .sp *, #footer .sp a:hover {
+    color: #444 !important;
+}
+
+#panel table {
+    width: 100% !important;
+}
+
+#panel table thead th,#panel table tbody td {
+    text-align: left;
+    padding-left: 10px;
+}
+
+#changeset table {
+    width: 100% !important;
+}
