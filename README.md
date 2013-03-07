@@ -42,13 +42,13 @@ Installation
 
 Installation of Sync.Base is fairly simple:
 
-# Download the Sync.Base Source (90)
-# Upload source to your webserver
-# Make syncbase/templates/compile writeable by the Webserver
-# Upload a tag for a project to your webserver
-# Configure your projects in syncbase/include/config/global.inc.php
-# Test your settings by getting the Version listing for your configured
-  projects
+1. Download the Sync.Base Source (90)
+2. Upload source to your webserver
+3. Make syncbase/templates/compile writeable by the Webserver
+4. Upload a tag for a project to your webserver
+5. Configure your projects in syncbase/include/config/global.inc.php
+6. Test your settings by getting the Version listing for your configured
+   projects
 
 License and Author
 ==================
